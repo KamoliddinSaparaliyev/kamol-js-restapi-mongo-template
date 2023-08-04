@@ -1,0 +1,54 @@
+
+###
+GET  http://localhost:3000/users
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZCI6IjY0YzhkZTE5OTUwNDU3ZjVhZDZmMDdlNiIsImlzX3N1cGVyIjpmYWxzZX0sImlhdCI6MTY5MDg4NTkxMywiZXhwIjoxNjkwOTcyMzEzfQ.VGtbk22tUs9QbLCdZgf7VgnQQwWtUruQNNcOpAM2uxg
+
+###
+GET  http://localhost:3000/users/64c3ad46b00cc6fc40b10fd2
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZCI6IjY0YzhkZTE5OTUwNDU3ZjVhZDZmMDdlNiIsImlzX3N1cGVyIjpmYWxzZX0sImlhdCI6MTY5MDg4NTkxMywiZXhwIjoxNjkwOTcyMzEzfQ.VGtbk22tUs9QbLCdZgf7VgnQQwWtUruQNNcOpAM2uxg
+
+
+###
+POST  http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "leo",
+  "password": "1234"
+}
+
+
+###
+POST http://localhost:3000/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZDJjNjg5ZTkzM2Q2ZTdiZDY5NGM2IiwiaXNfc3VwZXIiOmZhbHNlfSwiaWF0IjoxNjkxMTY3ODY5LCJleHAiOjE2OTEyNTQyNjl9.9WVX922PnQcyizyhvny_JucZ5czRaxPWXrqGhdl06JI
+Content-Type: application/json
+
+{
+  "full_name": "Leo Messi",
+  "username": "leo",
+  "password": "1234"
+}
+
+###
+PATCH   http://localhost:3000/users/64c4bd5234c299174342d7a3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZDJjNjg5ZTkzM2Q2ZTdiZDY5NGM2IiwiaXNfc3VwZXIiOmZhbHNlfSwiaWF0IjoxNjkxMTY3ODY5LCJleHAiOjE2OTEyNTQyNjl9.9WVX922PnQcyizyhvny_JucZ5czRaxPWXrqGhdl06JI
+Content-Type: application/json
+
+{
+  "full_name": "Akasi",
+  "username": "tel"
+}
+
+###
+PATCH   http://localhost:3000/users/me
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZCI6IjY0YzhkZTE5OTUwNDU3ZjVhZDZmMDdlNiIsImlzX3N1cGVyIjpmYWxzZX0sImlhdCI6MTY5MDg4NTkxMywiZXhwIjoxNjkwOTcyMzEzfQ.VGtbk22tUs9QbLCdZgf7VgnQQwWtUruQNNcOpAM2uxg
+Content-Type: application/json
+
+{
+  "full_name": "jone",
+  "username": "jone"
+}
+
+###
+DELETE   http://localhost:3000/users/64b8144f0f9d5d16444416a1
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZCI6IjY0YzhkZTE5OTUwNDU3ZjVhZDZmMDdlNiIsImlzX3N1cGVyIjpmYWxzZX0sImlhdCI6MTY5MDg4NTkxMywiZXhwIjoxNjkwOTcyMzEzfQ.VGtbk22tUs9QbLCdZgf7VgnQQwWtUruQNNcOpAM2uxg
